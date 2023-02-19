@@ -1,0 +1,58 @@
+@use "../mixins";
+
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	-webkit-tap-highlight-color: transparent;
+	scrollbar-gutter: stable;
+}
+
+*,
+:after,
+:before {
+	box-sizing: inherit;
+}
+
+* {
+	font-family: 'Nunito', system-ui, Tahoma, sans-serif;
+	font-weight: 500;
+	// color: var(--color-mine-shaft);
+
+	::-webkit-scrollbar {
+		width: 5px
+	}
+
+	::-webkit-scrollbar-track {
+		background-color: thistle;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background-color: #BB8FBB;
+	}
+
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+
+	width: 100%;
+	min-height: 100vh;
+	background: linear-gradient(109.6deg, rgb(135, 168, 254) 11.2%, rgb(254, 165, 197) 100.2%);
+
+	// font-family: var(--font-family-default);
+
+	margin: 0;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+	-moz-appearance: textfield;
+}
